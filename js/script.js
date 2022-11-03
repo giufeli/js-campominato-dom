@@ -2,13 +2,13 @@ const eleGrid = document.querySelector('.grid')
 const buttonGenera = document.querySelector('.button')
 
 const arrRandoms = [];
-    for (let i = 1; i <= 16; i++) {
-	let randomNumber;
-        do {
-            randomNumber = getRandomInteger(1, 100);
-        } while (arrRandoms.includes(randomNumber))
-        arrRandoms.push(randomNumber);
-    }
+ for (let i = 1; i <= 16; i++) {
+	 let randomNumber;
+    do {
+      randomNumber = getRandomInteger(1, 100);
+   } while (arrRandoms.includes(randomNumber))
+      arrRandoms.push(randomNumber);
+}
 
 console.log(arrRandoms);
 
@@ -28,13 +28,15 @@ buttonGenera.addEventListener('click', function() {
             eleGrid.append(eleCell)
             eleCell.innerHTML +=i+1
 
-            eleCell.addEventListener('click', function() {
-                this.classList.toggle('active')
-                console.log(i+1)
-                
-                if(!arrRandoms.includes(i)){
+            eleCell.addEventListener('click', function() {                           
+                if(!arrRandoms.includes(i+1)){
+                    console.log(i+1)
+                    this.classList.toggle('active')
                     console.log('Nuovo punto')
+
                 } else{
+                    console.log(i+1)
+                    this.classList.toggle('activeBomb')
                     console.log('Hai preso una bomba!')
                 }
             });

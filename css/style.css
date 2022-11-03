@@ -80,3 +80,8 @@ h1{
     background-color: rgb(0, 140, 255);
     color: white;
 }
+
+.activeBomb{
+    background-color: red;
+    color: black;
+}
