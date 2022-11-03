@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+h1{
+    color: white;
+}
+
+.containerNav{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+    align-items: center;
+    width: 100vw;
+    height: 8vh;
+    background-color: rgb(0, 140, 255);
+    color: white;
+    
+}
+
+.containerGrid{
+    display: flex;
+    width: 100vw;
+    height: 87vh;
+    background-color: aqua;
+}
+
+.containerFooter{
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 5vh;
+    padding-left: 10px;
+}
+
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 500px;
+    height: 500px;
+}
+
+.cellFacile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    min-width: calc(100% / 10);
+    height: calc(100% / 10);
+    background-color: salmon;
+}
+
+.cellMedia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    min-width: calc(100% / 9);
+    height: calc(100% / 9);
+    background-color: salmon;
+}
+
+.cellDifficile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    min-width: calc(100% / 7);
+    height: calc(100% / 7);
+    background-color: salmon;
+}
+
+.active{
+    background-color: rgb(0, 140, 255);
+    color: white;
+}
