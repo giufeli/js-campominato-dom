@@ -30,6 +30,13 @@ h1{
     background-color: aqua;
 }
 
+.containerEndGame{
+    display: flex;
+    width: 100vw;
+    height: 87vh;
+    background-color: aqua;
+}
+
 .containerFooter{
     display: flex;
     align-items: center;
@@ -84,4 +91,33 @@ h1{
 .activeBomb{
     background-color: red;
     color: black;
+}
+
+.hidden{
+    display: none;
+}
+
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: auto;
+    width: 490px;
+    height: 150px;
+    background-color: rgb(68, 171, 255);
+    border-radius: 30px;
+    font-size: 25px;
+}
+
+.endGame{
+    color: rgb(233, 0, 0);
+    font-weight: bold;
+}
+
+.result{
+    color: rgb(255, 221, 0);
+    font-weight: bold;
 }
